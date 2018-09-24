@@ -1,0 +1,87 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Console.WriteLine("Bir Kelime Giriniz: ");
+            //String metin = Console.ReadLine();
+            //Console.WriteLine(metin);
+            //Console.ReadKey();
+            //Console.WriteLine("sayı =");
+            //int s = Convert.ToInt32(Console.ReadLine());
+            //int f = 1;
+            //for (int i = 1; i <= s; i++)
+            //{
+            //    f *= i;      
+
+            //Console.WriteLine("1. sayı =");
+            //int s1 = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine("2. sayı =");
+            //int s2 = Convert.ToInt32(Console.ReadLine());
+            //int toplam = 0;
+            //for (int i = 1; i <= s2; i++)
+            //{
+            //    toplam += s1;
+            //}
+
+            //Console.WriteLine("1. sayı =");
+            //int bölünen = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine("2. sayı =");
+            //int bölen = Convert.ToInt32(Console.ReadLine());
+
+
+            //while (bölünen >= bölen)
+            //{
+            //    bölünen -= bölen;
+
+            //}
+
+            //for ( i = 1; bölünen > bölen; i++)
+            //{
+            //    bölünen -= bölen;
+            //}
+
+            //int i = 1;
+            //Console.WriteLine("Bir sayı giriniz :");
+            //int sayı = Convert.ToInt32(Console.ReadLine());
+
+            //while (sayı > 9)
+            //{
+            //    sayı /= 10;
+            //    i++;
+            //}
+            int s;
+            for (int i = 0; i < 20; i++) {
+
+                Console.WriteLine("Sayı giriniz: ")
+                s = Convert.ToInt32(Console.ReadLine());
+                
+                 if (s % 2  == 0)
+                {
+                    c += s;
+                }
+                else
+                {
+                    t += s;
+                }
+                    
+                    }
+
+            Console.WriteLine("Sayı {0} basamaklıdır", t);
+            Console.WriteLine("Sayı {0} basamaklıdır", c);
+            Console.WriteLine("Sayı {0} basamaklıdır",t/c);
+            Console.ReadKey();
+
+
+        }
+    }
+}
