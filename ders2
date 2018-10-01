@@ -1,0 +1,78 @@
+    //for (int j = 1; j < 10; j++)
+            //{
+            //    for (int i = 1; i < 10; i++)
+            //    {
+            //        Console.Write("{0}*{1}={2}\t", i, j, (i * j));
+
+            //    }
+
+            //    Console.WriteLine();
+
+            //}
+
+            //Console.WriteLine();
+
+            //Console.ReadKey();
+
+
+            //Console.WriteLine("Sayı giriniz");
+            //int sayi = Convert.ToInt32(Console.ReadLine());
+            //int toplam = 0;
+            //for (int i = 1; i < sayi; i++)
+            //{
+            //    if (sayi % i == 0)
+            //    {
+            //        toplam = toplam + i;
+            //    }
+            //}
+            //if (toplam == sayi)
+            //{
+            //    Console.WriteLine(sayi + " Mükemmel Sayıdır");
+            //}
+            //else
+            //{
+            //    Console.WriteLine(sayi + " Mükemmel Sayı Değildir");
+            //}
+            //Console.ReadLine();
+
+
+
+
+
+            //int toplam = 1;
+            // Console.WriteLine("Sayı giriniz");
+            // int s1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Tabanı giriniz: ");
+            //int s2 = Convert.ToInt32(Console.ReadLine());
+
+            //for(int i = 1; i < s1; i++)
+            //{
+            //    toplam *= s2;
+            //}
+
+            //Console.WriteLine("Sonuç= {0}", toplam);
+            //Console.ReadKey();
+
+
+            //int sayi,t=0;
+            //Console.WriteLine("Sayı giriniz: ");
+            //sayi = Convert.ToInt32(Console.ReadLine());
+
+            //for (int i =1; i < sayi / 2; i++)
+            //{
+            //    if (sayi % i == 0)
+            //        t += i;
+
+            //}
+
+            //if (t > sayi)
+            //{
+            //    Console.WriteLine("Güçlü");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Güçsüz");
+            //}
+
+            //Console.ReadKey();
+
