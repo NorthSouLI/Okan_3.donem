@@ -1,0 +1,66 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Console.WriteLine("n =");
+            //int n = Convert.ToInt32(Console.ReadLine());
+            //double toplam = 0;
+            //int sayac = 0;
+            //for (int i = 1; i <= n; i += 2)
+            //{
+            //    if (sayac % 2 == 0)
+            //    {
+            //        toplam -= toplam + 1 / i;
+            //        else
+            //        toplam += toplam + 1 / i;
+
+            //    }
+            //}
+
+            //Console.WriteLine("Sonuc{0}" + toplam);
+
+            //Console.ReadKey();
+
+            //    double toplam = 1d;
+            //    Console.WriteLine("x =");
+            //    double x = Convert.ToInt32(Console.ReadLine());
+            //    Console.WriteLine("n =");
+            //    double n = Convert.ToInt32(Console.ReadLine());
+
+            //    for (int i=1; i<=n;i++)
+            //    {
+            //        toplam += Math.Pow(x, i) / faktoriyel(i);
+            //    }
+            //    Console.WriteLine("sonuc = {0}", toplam);
+            //    Console.ReadKey();
+
+
+
+
+
+            //}
+
+            //static int faktoriyel(int sayi)
+            //{
+
+            //    int f = 1;
+            //    for (int i = 1; i <= sayi; i++)
+            //    {
+            //        f *= 1;
+            //    }
+            //    return f;
+            //    Console.ReadKey();
+
+
+
+            }
+            }
+        }
