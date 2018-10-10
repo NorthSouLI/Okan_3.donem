@@ -1,0 +1,75 @@
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Scanner;
+
+
+public class week5 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner giris=new Scanner(System.in);
+		ArrayList al=new ArrayList();
+		al.add("a");
+		al.add("r");
+		al.add("d");
+		al.add("a");
+		
+		System.out.println("ArrayListemizin elemanları: ");
+		Iterator it=al.iterator();
+		while (it.hasNext()){
+			 String veri= (String) it.next();
+			 System.out.print(veri+"");
+			 if (veri.equalsIgnoreCase("d"))it.remove();
+			 
+		}
+		System.out.println("\nGüncellenmiş liste: ");
+		Iterator yeniit=al.iterator();
+		while (yeniit.hasNext()){
+			 String veri= (String) yeniit.next();
+			 System.out.print(veri+"");
+			 
+	
+}
+		System.out.println();
+}
+}
+
+
+
+
+
+
+
+
+
+import java.util.HashSet;
+import java.util.Iterator;
+
+
+public class ıterator {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		HashSet hSet=new HashSet();
+		System.out.println("durum: "+hSet.add("ali"));
+		hSet.add("ali");
+		hSet.add("veli");
+		System.out.println("durum: "+hSet.add("ali"));
+		hSet.add("ayşe");
+		hSet.add("fatma");
+		hSet.add("hayriye");
+		Iterator itr=hSet.iterator();
+		while (itr.hasNext());
+		System.out.println(itr.next());
+	}
+
+}
