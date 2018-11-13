@@ -1,0 +1,47 @@
+package kaan;
+
+import java.util.Scanner;
+
+public class kaan {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scann=new Scanner(System.in);
+		System.out.println("tekrar sayısını giriniz");
+		byte ts=scann.nextByte();
+		System.out.println("ne doldurulucak");
+		String dolu=scann.next();
+		int ts1=ts-1;
+		for ( int i = 1; i <=ts ; i++) {
+			for (int j = ts1; j >0;j--) {
+				System.out.print(" ");
+			}
+			for (int j = 1; j <= i; j++) {
+				System.out.print(dolu);
+			}
+			for (int j = 1; j <=i; j++) {
+				System.out.print(dolu);
+			}
+			System.out.println();
+			ts1--;
+		}
+		ts1 = ts -1;
+		for (int i = 1; i <=ts; i++) {
+			for (int j = 1; j < i; j++) {
+				System.out.print(" ");
+			}
+			for (int j = ts1; j >=0; j--) {
+				System.out.print(dolu);
+			}
+			for (int j = ts1; j >=0;j--) {
+				System.out.print(dolu);
+			}
+			System.out.println();
+			ts1--;
+		}
+		
+		
+		
+	}
+
+}
