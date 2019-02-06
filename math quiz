@@ -1,0 +1,111 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsApplication1
+{
+    public partial class Form1 : Form
+    {
+        
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult uyaricevap = MessageBox.Show("Silmek istediğinize eminmisiniz ?", "Uyarı", MessageBoxButtons.YesNo);
+            if (uyaricevap == DialogResult.Yes)
+            {
+
+                cevap1.Text = "";
+                cevap2.Text = "";
+                cevap3.Text = "";
+            }
+            else
+            {
+                Mesaj.Text = "Silmekten vazgeçtiniz...";
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(cevap1.Text))
+            {
+                Mesaj.Text = "Lütfen 1. cevabı veriniz";
+                return;
+            }
+            int cevap1Int;
+            if (int.TryParse(cevap1.Text, out cevap1Int))
+            {
+                if (cevap1Int == 5)
+                {
+                    Mesaj.Text = "cevap1 doğru";
+                }
+                else
+                {
+                    Mesaj.Text = "cevap1 yanlış";
+                }
+            }
+            else
+            {
+                Mesaj.Text = "Lütfen 1. cevap numerik olsun...";
+            }
+
+        }
+
+        int sayac = 0;
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            
+            sayac++;
+            zaman.Text = sayac.ToString();
+
+            if (sayac == 20)
+            {
+                sayac = 0;
+                timer1.Stop();
+                zaman.Text = "";
+
+                button2.Enabled = false;
+
+                MessageBox.Show("Süre doldu");
+                
+            }
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+    }
+}
